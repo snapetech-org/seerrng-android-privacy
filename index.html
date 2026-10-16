@@ -24,7 +24,7 @@
     <p>SeerrNG for Android (package <code>org.snapetech.seerrng</code>) is maintained by Snapetech. It connects to SeerrNG servers that you choose and configure. The app does not provide a server or create a Snapetech account for you.</p>
 
     <h2>Information stored on your device</h2>
-    <p>The app stores the server names and addresses you save in its private app storage. When you sign in, Android WebView stores the site data and session cookies needed to keep you signed in to that server. The app may use the selected server's session cookie when downloading a file from that same server. These items stay on your device and are not sent to Snapetech. You can remove a saved server or clear the app's storage in Android settings; uninstalling the app removes its app storage.</p>
+    <p>The app stores the server names and addresses you save in its private app storage. When you sign in, Android WebView stores the site data and session cookies needed to keep you signed in to that server. The app may use the selected server's session cookie when downloading a file from that same server. Capped-use builds also store the number of successful server sessions used for the free preview. This count is kept on your device, is used only to decide whether another app session can start, and is not sent to Snapetech or to the SeerrNG server. You can remove a saved server or clear the app's storage in Android settings; clearing storage resets the local preview count, and uninstalling the app removes its app storage.</p>
     <p>Your sign-in and normal app activity are sent directly to the server address you selected. The server operator controls the server's data collection, retention, and access. Review that operator's privacy information as well. If you choose an HTTP address, the connection is not encrypted in transit; the app warns before allowing it.</p>
 
     <h2>Advertising and consent</h2>
@@ -32,7 +32,7 @@
     <p>Google's User Messaging Platform (UMP) displays applicable privacy messages and manages the consent choices used by the ad SDK. Google may store or process consent signals to apply those choices. When the app shows a <strong>Privacy and data choices</strong> control, use it to review or change your choices. Android also provides controls for the advertising ID in system settings. The app does not include an analytics or crash-reporting service operated by Snapetech.</p>
 
     <h2>Google Play purchases</h2>
-    <p>If the Google Play version offers the optional lifetime no-ads purchase, Google Play processes the checkout and transaction. The app receives purchase status from Google Play, stores an on-device no-ads entitlement flag, and does not send the purchase token to a Snapetech server. Google handles payment information under its own privacy policy. APKs installed outside Google Play do not provide an alternate payment flow.</p>
+    <p>If the Google Play version offers the optional lifetime unlock, Google Play processes the checkout and transaction. The app receives purchase status from Google Play and stores an on-device entitlement so the purchase can remove ads in an ad-supported build or unlock unlimited sessions in a capped-use build. The app does not send the purchase token to a Snapetech server. Google handles payment information under its own privacy policy. APKs installed outside Google Play do not provide an alternate payment flow.</p>
 
     <h2>Information shared with others</h2>
     <ul>
